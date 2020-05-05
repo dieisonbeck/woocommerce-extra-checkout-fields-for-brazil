@@ -199,20 +199,20 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 				'priority' => 31,
 			);
 
-			$new_fields['billing_sex'] = array(
-				'type'        => 'select',
-				'label'       => __( 'Sex', 'woocommerce-extra-checkout-fields-for-brazil' ),
-				'class'       => array( 'form-row-last' ),
-				'input_class' => array( 'wc-ecfb-select' ),
-				'clear'       => true,
-				'required'    => true,
-				'options'     => array(
-					'' => __( 'Select', 'woocommerce-extra-checkout-fields-for-brazil' ),
-					__( 'Female', 'woocommerce-extra-checkout-fields-for-brazil' ) => __( 'Female', 'woocommerce-extra-checkout-fields-for-brazil' ),
-					__( 'Male', 'woocommerce-extra-checkout-fields-for-brazil' )   => __( 'Male', 'woocommerce-extra-checkout-fields-for-brazil' ),
-				),
-				'priority'    => 32,
-			);
+			// $new_fields['billing_sex'] = array(
+			// 	'type'        => 'select',
+			// 	'label'       => __( 'Sex', 'woocommerce-extra-checkout-fields-for-brazil' ),
+			// 	'class'       => array( 'form-row-last' ),
+			// 	'input_class' => array( 'wc-ecfb-select' ),
+			// 	'clear'       => true,
+			// 	'required'    => true,
+			// 	'options'     => array(
+			// 		'' => __( 'Select', 'woocommerce-extra-checkout-fields-for-brazil' ),
+			// 		__( 'Female', 'woocommerce-extra-checkout-fields-for-brazil' ) => __( 'Female', 'woocommerce-extra-checkout-fields-for-brazil' ),
+			// 		__( 'Male', 'woocommerce-extra-checkout-fields-for-brazil' )   => __( 'Male', 'woocommerce-extra-checkout-fields-for-brazil' ),
+			// 	),
+			// 	'priority'    => 32,
+			// );
 		}
 
 		if ( isset( $fields['billing_country'] ) ) {
@@ -249,6 +249,7 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 			'label'    => __( 'Neighborhood', 'woocommerce-extra-checkout-fields-for-brazil' ),
 			'class'    => array( 'form-row-first', 'address-field' ),
 			'clear'    => true,
+			'required' => true,
 			'priority' => 65,
 		);
 
